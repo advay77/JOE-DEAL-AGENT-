@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Voice Agent</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="chat-container">
+    <h2 class="glow">🤖 Astonished Voice AI Agent</h2>
+    <div id="visualizer"></div>
+    <div id="chat-box"></div>
+    <button id="record" class="pulse">🎤 Speak</button>
+    <p id="loading" style="display:none;">⏳ Processing...</p>
+  </div>
+  <script>
+    // Simple waveform animation for astonished effect
+    const visualizer = document.getElementById('visualizer');
+    function animateWave() {
+      visualizer.innerHTML = '';
+      for (let i = 0; i < 20; i++) {
+        const bar = document.createElement('div');
+        bar.className = 'bar';
+        bar.style.height = `${Math.random() * 40 + 10}px`;
+        visualizer.appendChild(bar);
+      }
+    }
+    setInterval(animateWave, 120);
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    const recordBtn = document.getElementById('record');
+    const loading = document.getElementById('loading');
+    let mediaRecorder, audioChunks = [];
+    recordBtn.onclick = async function() {
+      if (mediaRecorder && mediaRecorder.state === 'recording') {
+        mediaRecorder.stop();
+        recordBtn.textContent = '🎤 Speak';
+        loading.style.display = 'block';
+        return;
+      }
+      audioChunks = [];
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      mediaRecorder = new MediaRecorder(stream);
+      mediaRecorder.start();
+      recordBtn.textContent = '⏹️ Stop';
+      mediaRecorder.ondataavailable = e => audioChunks.push(e.data);
+      mediaRecorder.onstop = async () => {
+        const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+        const formData = new FormData();
+        formData.append('audio', audioBlob, 'input.wav');
+        try {
+          const response = await axios.post('/', formData, { responseType: 'blob' });
+          const audioUrl = URL.createObjectURL(response.data);
+          const audio = new Audio(audioUrl);
+          audio.play();
+        } catch (err) {
+          alert('Error: ' + (err.response?.data?.error || err.message));
+        }
+        loading.style.display = 'none';
+      };
+    };
+  </script>
+  <!-- ✅ OmniDimension Widget Script -->
+  <script id="omnidimension-web-widget" async src="https://backend.omnidim.io/web_widget.js?secret_key=0b977f42b4341e237ea934263dbabd0a"></script>
+</body>
+</html>
