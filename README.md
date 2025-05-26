@@ -42,15 +42,6 @@ python main.py
 
 ---
 
-## 📸 Screenshots
-
-<p align="center">
-  <img src="https://fakeimg.pl/350x200/?text=Joe+in+Action&font=lobster" width="350" alt="Joe in Action Screenshot" />
-  <img src="https://fakeimg.pl/350x200/?text=Best+Deals&font=lobster" width="350" alt="Best Deals Screenshot" />
-</p>
-
----
-
 ## 🗂️ Project Structure
 
 ```plaintext
@@ -85,7 +76,7 @@ JOE-DEAL-AGENT-
 
 ---
 
-## SCREENSHOTS 
+## 📸 Screenshots
 
 
 ![Screenshot 2025-05-26 085738](https://github.com/user-attachments/assets/fb207f88-d8b3-40cf-a512-641122edfcf5)
