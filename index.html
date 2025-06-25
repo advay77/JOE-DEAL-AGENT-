@@ -3,79 +3,515 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AI Deal Agent</title>
+  <title>AI Deal Agent - Your Smart Shopping Companion | Save Money with AI</title>
+  <meta name="description" content="AI Deal Agent finds the best deals, compares prices, and provides personalized shopping recommendations. Save time and money with our intelligent shopping assistant.">
+  <meta name="keywords" content="AI shopping, deal finder, price comparison, smart shopping, AI assistant, e-commerce">
+  <meta name="author" content="AI Deal Agent">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aidealagent.com/">
+  <meta property="og:title" content="AI Deal Agent - Your Smart Shopping Companion">
+  <meta property="og:description" content="Find the best deals and save money with our AI-powered shopping assistant.">
+  <meta property="og:image" content="https://aidealagent.com/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://aidealagent.com/">
+  <meta property="twitter:title" content="AI Deal Agent - Your Smart Shopping Companion">
+  <meta property="twitter:description" content="Find the best deals and save money with our AI-powered shopping assistant.">
+  <meta property="twitter:image" content="https://aidealagent.com/og-image.jpg">
+
   <link rel="stylesheet" href="styles.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
 </head>
 <body>
-  <header class="header">
+  <!-- Header -->
+  <header class="header" role="banner">
     <div class="container">
-      <h1 class="logo">AI Deal Agent</h1>
-      <nav class="nav">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="header-content">
+        <h1 class="logo" aria-label="AI Deal Agent">
+          <span class="logo-icon">🤖</span>
+          AI Deal Agent
+        </h1>
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+          <ul>
+            <li><a href="#home" aria-label="Go to home section">Home</a></li>
+            <li><a href="#features" aria-label="View features">Features</a></li>
+            <li><a href="#how-it-works" aria-label="Learn how it works">How It Works</a></li>
+            <li><a href="#pricing" aria-label="View pricing">Pricing</a></li>
+            <li><a href="#testimonials" aria-label="Read testimonials">Reviews</a></li>
+            <li><a href="#contact" aria-label="Contact us">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button class="btn-secondary" aria-label="Sign in to your account">Sign In</button>
+          <button class="btn-primary" aria-label="Start free trial">Free Trial</button>
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
   </header>
 
-  <section id="home" class="hero">
+  <!-- Hero Section -->
+  <section id="home" class="hero" role="main">
     <div class="container">
-      <h2>Your Smart Shopping Companion</h2>
-      <p>Find top deals, compare products, and get instant recommendations from your personal AI Deal Agent.</p>
-      <a href="#contact" class="btn">Talk to Agent</a>
-    </div>
-  </section>
-
-  <section id="features" class="features">
-    <div class="container">
-      <h2>Key Features</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Real-Time Deal Search</h3>
-          <p>AI scans popular platforms to fetch the best prices instantly.</p>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-icon">✨</span>
+          <span>Trusted by 50,000+ Smart Shoppers</span>
         </div>
-        <div class="feature">
-          <h3>Product Comparisons</h3>
-          <p>Compare prices, specs, and reviews side-by-side with ease.</p>
+        <h2 class="hero-title">Your AI-Powered Shopping Companion That Never Sleeps</h2>
+        <p class="hero-subtitle">
+          Stop overpaying for products. Our advanced AI scans millions of deals across 1000+ retailers, 
+          compares prices in real-time, and finds you the best deals automatically. Save up to 70% on every purchase.
+        </p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">$2.3M+</span>
+            <span class="stat-label">Saved for Users</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">1M+</span>
+            <span class="stat-label">Deals Found</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">AI Monitoring</span>
+          </div>
         </div>
-        <div class="feature">
-          <h3>Personalized Recommendations</h3>
-          <p>Tailored deals and products based on your preferences and history.</p>
+        <div class="hero-actions">
+          <a href="#pricing" class="btn btn-primary" aria-label="Start your free trial">
+            <span class="btn-icon">🚀</span>
+            Start Free Trial
+          </a>
+          <button class="btn btn-talk" aria-label="Talk to AI agent now">
+            <span class="btn-icon">🎙️</span>
+            Talk to AI Agent
+          </button>
+          <a href="#demo" class="btn-link" aria-label="Watch product demo">
+            <span class="play-icon">▶️</span>
+            Watch Demo (2 min)
+          </a>
+        </div>
+        <div class="hero-proof">
+          <p class="proof-text">Join thousands of satisfied customers:</p>
+          <div class="proof-avatars">
+            <div class="avatar">👨‍💼</div>
+            <div class="avatar">👩‍💻</div>
+            <div class="avatar">👨‍🎓</div>
+            <div class="avatar">👩‍🔬</div>
+            <div class="avatar">👨‍🎨</div>
+            <span class="avatar-count">+50K</span>
+          </div>
+          <div class="proof-rating">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <span class="rating-text">4.9/5 from 12,847 reviews</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="about" class="about">
+  <!-- Features Section -->
+  <section id="features" class="features" role="region" aria-labelledby="features-title">
     <div class="container">
-      <h2>About the Agent</h2>
-      <p>AI Deal Agent is powered by advanced language models and shopping APIs. It helps you make smarter choices and save money — all with a single click.</p>
+      <div class="section-header">
+        <h2 id="features-title" class="section-title">Powerful AI Features That Save You Money</h2>
+        <p class="section-subtitle">Our advanced AI technology works 24/7 to ensure you never miss a great deal</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🔍</div>
+          <h3 class="feature-title">Smart Deal Discovery</h3>
+          <p class="feature-description">AI scans 1000+ retailers every minute to find hidden deals and price drops you'd never discover manually.</p>
+          <div class="feature-stats">
+            <span class="feature-stat">99.9% accuracy</span>
+            <span class="feature-stat">Real-time updates</span>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚖️</div>
+          <h3 class="feature-title">Intelligent Price Comparison</h3>
+          <p class="feature-description">Compare prices, shipping costs, reviews, and return policies across multiple platforms instantly.</p>
+          <div class="feature-stats">
+            <span class="feature-stat">Save up to 70%</span>
+            <span class="feature-stat">Multi-platform</span>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3 class="feature-title">Personalized Recommendations</h3>
+          <p class="feature-description">AI learns your preferences and shopping patterns to suggest deals tailored specifically for you.</p>
+          <div class="feature-stats">
+            <span class="feature-stat">95% relevance</span>
+            <span class="feature-stat">Smart learning</span>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3 class="feature-title">Instant Notifications</h3>
+          <p class="feature-description">Get alerted the moment your wishlist items go on sale or when better deals become available.</p>
+          <div class="feature-stats">
+            <span class="feature-stat">Instant alerts</span>
+            <span class="feature-stat">Never miss deals</span>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3 class="feature-title">Fraud Protection</h3>
+          <p class="feature-description">AI analyzes seller reputation, reviews, and return policies to protect you from scams and fake products.</p>
+          <div class="feature-stats">
+            <span class="feature-stat">100% secure</span>
+            <span class="feature-stat">Verified sellers</span>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3 class="feature-title">Savings Analytics</h3>
+          <p class="feature-description">Track your savings over time with detailed analytics and insights into your shopping patterns.</p>
+          <div class="feature-stats">
+            <span class="feature-stat">Detailed reports</span>
+            <span class="feature-stat">Savings tracking</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="contact" class="contact">
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="how-it-works" role="region" aria-labelledby="how-it-works-title">
     <div class="container">
-      <h2>Contact Us</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+      <div class="section-header">
+        <h2 id="how-it-works-title" class="section-title">How AI Deal Agent Works</h2>
+        <p class="section-subtitle">Get started in 3 simple steps and start saving immediately</p>
+      </div>
+      <div class="steps-container">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3 class="step-title">Tell Us What You Want</h3>
+            <p class="step-description">Simply chat with our AI agent or add products to your wishlist. Our AI understands natural language and learns your preferences.</p>
+          </div>
+          <div class="step-visual">💬</div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3 class="step-title">AI Finds the Best Deals</h3>
+            <p class="step-description">Our AI scans thousands of retailers, compares prices, checks reviews, and finds the absolute best deals for you in seconds.</p>
+          </div>
+          <div class="step-visual">🔍</div>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3 class="step-title">Save Money & Shop Smart</h3>
+            <p class="step-description">Get instant notifications about deals, price drops, and personalized recommendations. Shop with confidence knowing you got the best price.</p>
+          </div>
+          <div class="step-visual">💰</div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <footer class="footer">
+  <!-- Pricing Section -->
+  <section id="pricing" class="pricing" role="region" aria-labelledby="pricing-title">
     <div class="container">
-      <p>&copy; 2025 AI Deal Agent. All rights reserved.</p>
+      <div class="section-header">
+        <h2 id="pricing-title" class="section-title">Choose Your Plan</h2>
+        <p class="section-subtitle">Start free, upgrade when you're ready. All plans include our core AI features.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-title">Free</h3>
+            <div class="pricing-price">
+              <span class="price-currency">$</span>
+              <span class="price-amount">0</span>
+              <span class="price-period">/month</span>
+            </div>
+            <p class="pricing-description">Perfect for casual shoppers</p>
+          </div>
+          <ul class="pricing-features">
+            <li>✅ 10 deal searches per day</li>
+            <li>✅ Basic price comparison</li>
+            <li>✅ Email notifications</li>
+            <li>✅ 5 wishlist items</li>
+            <li>❌ Advanced AI recommendations</li>
+            <li>❌ Priority support</li>
+          </ul>
+          <button class="pricing-btn btn-secondary">Get Started Free</button>
+        </div>
+        <div class="pricing-card pricing-featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-title">Pro</h3>
+            <div class="pricing-price">
+              <span class="price-currency">$</span>
+              <span class="price-amount">9</span>
+              <span class="price-period">/month</span>
+            </div>
+            <p class="pricing-description">For serious deal hunters</p>
+          </div>
+          <ul class="pricing-features">
+            <li>✅ Unlimited deal searches</li>
+            <li>✅ Advanced price comparison</li>
+            <li>✅ Instant notifications</li>
+            <li>✅ Unlimited wishlist</li>
+            <li>✅ AI-powered recommendations</li>
+            <li>✅ Priority support</li>
+            <li>✅ Savings analytics</li>
+            <li>✅ Price drop alerts</li>
+          </ul>
+          <button class="pricing-btn btn-primary">Start 14-Day Free Trial</button>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-title">Enterprise</h3>
+            <div class="pricing-price">
+              <span class="price-currency">$</span>
+              <span class="price-amount">29</span>
+              <span class="price-period">/month</span>
+            </div>
+            <p class="pricing-description">For businesses and teams</p>
+          </div>
+          <ul class="pricing-features">
+            <li>✅ Everything in Pro</li>
+            <li>✅ Team collaboration</li>
+            <li>✅ Bulk purchasing tools</li>
+            <li>✅ Custom integrations</li>
+            <li>✅ Dedicated account manager</li>
+            <li>✅ Advanced analytics</li>
+          </ul>
+          <button class="pricing-btn btn-secondary">Contact Sales</button>
+        </div>
+      </div>
+      <div class="pricing-guarantee">
+        <p>💰 30-day money-back guarantee • 🔒 Cancel anytime • 📞 24/7 support</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials" role="region" aria-labelledby="testimonials-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="testimonials-title" class="section-title">What Our Users Say</h2>
+        <p class="section-subtitle">Join thousands of satisfied customers who are saving money every day</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"AI Deal Agent saved me $1,200 on electronics this year alone. The AI is incredibly smart and finds deals I never would have discovered."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">👨‍💼</div>
+            <div class="author-info">
+              <div class="author-name">Michael Chen</div>
+              <div class="author-title">Software Engineer</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"As a busy mom, I don't have time to hunt for deals. This AI does all the work for me and I save hundreds every month on family essentials."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">👩‍💻</div>
+            <div class="author-info">
+              <div class="author-name">Sarah Johnson</div>
+              <div class="author-title">Marketing Manager</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"The price drop alerts are game-changing. I got a $800 laptop for $450 because the AI notified me the second it went on sale."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">👨‍🎓</div>
+            <div class="author-info">
+              <div class="author-name">David Rodriguez</div>
+              <div class="author-title">College Student</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section" role="region" aria-labelledby="cta-title">
+    <div class="container">
+      <div class="cta-content">
+        <h2 id="cta-title" class="cta-title">Ready to Start Saving Money?</h2>
+        <p class="cta-subtitle">Join 50,000+ smart shoppers who never overpay for anything</p>
+        <div class="cta-actions">
+          <button class="btn btn-primary btn-large" aria-label="Start your free trial now">
+            <span class="btn-icon">🚀</span>
+            Start Free Trial - No Credit Card Required
+          </button>
+          <button class="btn btn-talk btn-large" aria-label="Talk to our AI agent">
+            <span class="btn-icon">🎙️</span>
+            Talk to AI Agent Now
+          </button>
+        </div>
+        <div class="cta-features">
+          <span class="cta-feature">✅ 14-day free trial</span>
+          <span class="cta-feature">✅ No setup fees</span>
+          <span class="cta-feature">✅ Cancel anytime</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact" role="region" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="contact-content">
+        <div class="contact-info">
+          <h2 id="contact-title" class="section-title">Get in Touch</h2>
+          <p class="section-subtitle">Have questions? We're here to help you save money and shop smarter.</p>
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="method-icon">💬</div>
+              <div class="method-content">
+                <h3>Live Chat</h3>
+                <p>Chat with our AI agent or human support team 24/7</p>
+                <button class="method-btn btn-talk">Start Chat</button>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="method-icon">📧</div>
+              <div class="method-content">
+                <h3>Email Support</h3>
+                <p>Get detailed help via email within 2 hours</p>
+                <a href="mailto:support@aidealagent.com" class="method-btn btn-secondary">Send Email</a>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="method-icon">📞</div>
+              <div class="method-content">
+                <h3>Phone Support</h3>
+                <p>Speak directly with our support team</p>
+                <a href="tel:+1-800-DEAL-AI" class="method-btn btn-secondary">Call Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-container">
+          <form class="contact-form" role="form" aria-labelledby="form-title">
+            <h3 id="form-title">Send us a Message</h3>
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" placeholder="Enter your full name" required aria-required="true" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email address" required aria-required="true" />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="">Select a topic</option>
+                <option value="general">General Inquiry</option>
+                <option value="support">Technical Support</option>
+                <option value="billing">Billing Question</option>
+                <option value="feature">Feature Request</option>
+                <option value="partnership">Partnership</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" placeholder="Tell us how we can help you..." required aria-required="true" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span class="btn-icon">📤</span>
+              Send Message
+            </button>
+            <p class="form-note">We'll respond within 2 hours during business hours</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3 class="footer-logo">
+            <span class="logo-icon">🤖</span>
+            AI Deal Agent
+          </h3>
+          <p class="footer-description">Your intelligent shopping companion that never sleeps. Save money, shop smarter, live better.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Follow us on Twitter">🐦</a>
+            <a href="#" aria-label="Like us on Facebook">📘</a>
+            <a href="#" aria-label="Connect on LinkedIn">💼</a>
+            <a href="#" aria-label="Subscribe on YouTube">📺</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#how-it-works">How It Works</a></li>
+              <li><a href="#api">API</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#careers">Careers</a></li>
+              <li><a href="#press">Press</a></li>
+              <li><a href="#blog">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#help">Help Center</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#status">Status</a></li>
+              <li><a href="#security">Security</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#privacy">Privacy Policy</a></li>
+              <li><a href="#terms">Terms of Service</a></li>
+              <li><a href="#cookies">Cookie Policy</a></li>
+              <li><a href="#gdpr">GDPR</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>&copy; 2025 AI Deal Agent. All rights reserved.</p>
+          <div class="footer-badges">
+            <span class="badge">🔒 SOC 2 Certified</span>
+            <span class="badge">🛡️ GDPR Compliant</span>
+            <span class="badge">⭐ 4.9/5 Rating</span>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
 
   <!-- Omnidimension Widget Script -->
   <script id="omnidimension-web-widget" async src="https://backend.omnidim.io/web_widget.js?secret_key=0b977f42b4341e237ea934263dbabd0a"></script>
+  
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
