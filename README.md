@@ -42,26 +42,11 @@ python main.py
 
 ---
 
-## 🗂️ Project Structure
 
-```plaintext
-JOE-DEAL-AGENT-
-│
-├── main.py
-├── requirements.txt
-├── static/
-│   └── style.css
-├── templates/
-│   └── index.html
-└── README.md
-```
-
----
 
 ## 🛠️ Built With
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.9+-yellow?style=for-the-badge&logo=python" />
   <img src="https://img.shields.io/badge/HTML-5-orange?style=for-the-badge&logo=html5" />
   <img src="https://img.shields.io/badge/CSS-3-blue?style=for-the-badge&logo=css3" />
 </p>
@@ -76,13 +61,6 @@ JOE-DEAL-AGENT-
 
 ---
 
-## 📸 Screenshots
-
-
-![Screenshot 2025-05-26 085738](https://github.com/user-attachments/assets/fb207f88-d8b3-40cf-a512-641122edfcf5)
-
-
-![Screenshot 2025-05-26 085710](https://github.com/user-attachments/assets/8d563fa4-2f03-4519-9cc2-10521757c6b9)
 
 ## 🎉 Why Joe?
 
